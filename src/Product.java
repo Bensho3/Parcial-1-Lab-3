@@ -42,7 +42,18 @@ public abstract class Product {
     public void showProduct()
     {}
 
+    public Float doADiscount(Float percentage)
+    {
+        price = price / 100*percentage;
+        return price;
 
+    }
+
+    public Float increaseProcuctValue(Float percentage)
+    {
+        price = price * percentage;
+        return price;
+    }
 
 
 }
